@@ -1,25 +1,141 @@
-//
-//  ViewController.swift
-//  Assignment1
-//
-//  Created by student on 2016-02-05.
-//  Copyright © 2016 student. All rights reserved.
-//
+//  Author      : Tyler Cadeau
+//  Number Num  : 200246900
+//  Assignment  : Assignment1
+//  File        : ViewController.swift
+//  Date        : 02/05/2016
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    //Variables
+    var firstUserInput = 0
+    var secondUserInput = 0
+    var answer = 0
+    var operation = ""
+    var stillTypingNumber = false
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var calculatorDisplay: UILabel!
 
+    @IBAction func numberTapped(sender: AnyObject)
+    {
+        var currentInput = String(sender.currentTitle)
+        
+        //String converstion bug 'fix'
+        if (currentInput as NSString).containsString("Optional")
+        {
+            //Cut off excess characters
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropFirst())
+            currentInput=String(currentInput.characters.dropLast())
+            currentInput=String(currentInput.characters.dropLast())
+        }
+
+        if stillTypingNumber
+        {
+            //If the user has not chosen a calculation
+            calculatorDisplay.text = calculatorDisplay.text! + String(currentInput)
+        }
+        else
+        {
+            //Update display with number
+            calculatorDisplay.text = currentInput
+            stillTypingNumber = true
+        }
+    }
+    
+    @IBAction func calculationTapped(sender: AnyObject)
+    {
+        //Set boolean to false
+        stillTypingNumber = false
+        
+        //Assign first number entered
+        firstUserInput = Int(calculatorDisplay.text!)!
+        
+        //Assign the operation selected
+        operation = sender.currentTitle!!
+        
+        if operation == "+/-"
+        {
+            //Postive/negative converstion
+            firstUserInput = (firstUserInput*(-1))
+            calculatorDisplay.text=String(firstUserInput)
+        }
+    }
+    
+    @IBAction func equalsTapped(sender: AnyObject)
+    {
+        //Set boolean to false
+        stillTypingNumber = false
+        
+        //Set answer variable back to default
+        answer = 0
+        
+        //Assign second number entered
+        secondUserInput = Int(calculatorDisplay.text!)!
+        
+        if operation == "+"
+        {
+            //adition
+            answer = firstUserInput + secondUserInput
+        }
+        else if operation == "-"
+        {
+            //subtraction
+            answer = firstUserInput - secondUserInput
+        }
+        else if operation == "X"
+        {
+            //multiplication
+            answer = firstUserInput * secondUserInput
+        }
+        else if operation == "/"
+        {
+            //Division
+            answer = firstUserInput / secondUserInput
+        }
+        else if operation == "%"
+        {
+            //Modulas
+            answer = firstUserInput % secondUserInput
+        }
+        
+        calculatorDisplay.text = "\(answer)"
+    }
+    
+    @IBAction func clearScreenTapped(sender: AnyObject)
+    {
+        //Reset variables back to default
+        stillTypingNumber = false
+        firstUserInput = 0
+        secondUserInput = 0
+        operation = ""
+        
+        //Wipe calculation screen
+        calculatorDisplay.text="0"
+        
+    }
+    
+    
 }
 

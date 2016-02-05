@@ -9,26 +9,26 @@ import UIKit
 class ViewController: UIViewController
 {
     //Variables
-    var firstUserInput = 0
-    var secondUserInput = 0
-    var answer = 0
+    var firstUserInput:Float = 0.0
+    var secondUserInput:Float = 0.0
+    var answer:Float = 0.0
     var operation = ""
     var stillTypingNumber = false
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBOutlet weak var calculatorDisplay: UILabel!
-
+    
     @IBAction func numberTapped(sender: AnyObject)
     {
         var currentInput = String(sender.currentTitle)
@@ -50,7 +50,7 @@ class ViewController: UIViewController
             currentInput=String(currentInput.characters.dropLast())
             currentInput=String(currentInput.characters.dropLast())
         }
-
+        
         if stillTypingNumber
         {
             //If the user has not chosen a calculation
@@ -70,8 +70,7 @@ class ViewController: UIViewController
         stillTypingNumber = false
         
         //Assign first number entered
-        firstUserInput = Int(calculatorDisplay.text!)!
-        
+        firstUserInput = NSString(string: calculatorDisplay.text!).floatValue
         //Assign the operation selected
         operation = sender.currentTitle!!
         
@@ -89,11 +88,10 @@ class ViewController: UIViewController
         stillTypingNumber = false
         
         //Set answer variable back to default
-        answer = 0
+        answer = 0.0
         
         //Assign second number entered
-        secondUserInput = Int(calculatorDisplay.text!)!
-        
+        secondUserInput = NSString(string: calculatorDisplay.text!).floatValue
         if operation == "+"
         {
             //adition

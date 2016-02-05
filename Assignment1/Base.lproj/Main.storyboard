@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHg-RI-q0c">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHg-RI-q0c">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-A9-5Cq">
-                                        <rect key="frame" x="8" y="8" width="359" height="112"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-A9-5Cq">
+                                        <rect key="frame" x="8" y="8" width="351" height="112"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -30,10 +30,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.85538694371727753" green="0.85538694371727753" blue="0.85538694371727753" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwU-M8-boy">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FwU-M8-boy">
                                 <rect key="frame" x="0.0" y="126" width="375" height="474"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-dJ-AeF">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-dJ-AeF">
                                         <rect key="frame" x="8" y="272" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jO4-dJ-AeF" secondAttribute="height" multiplier="1:1" id="WE6-mO-ETy"/>
@@ -44,7 +44,7 @@
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vn9-l7-b18"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pC0-BG-lk7">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pC0-BG-lk7">
                                         <rect key="frame" x="8" y="360" width="158" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pC0-BG-lk7" secondAttribute="height" multiplier="79:40" id="Bri-xD-rqd"/>
@@ -55,7 +55,7 @@
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjs-bu-d3E"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyM-IQ-pVc">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyM-IQ-pVc">
                                         <rect key="frame" x="8" y="184" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IyM-IQ-pVc" secondAttribute="height" multiplier="1:1" id="o4A-1T-rrj"/>
@@ -66,7 +66,7 @@
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sz8-dW-Nsu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-Yd-88j">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-Yd-88j">
                                         <rect key="frame" x="8" y="96" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vSl-Yd-88j" secondAttribute="height" multiplier="1:1" id="erS-bD-sew"/>
@@ -77,7 +77,7 @@
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pa-ir-bbj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbg-OM-9V0">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbg-OM-9V0">
                                         <rect key="frame" x="268" y="8" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rbg-OM-9V0" secondAttribute="height" multiplier="1:1" id="Szf-lr-aj8"/>
@@ -88,7 +88,7 @@
                                             <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2P-xi-ekE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vk-Tl-sAL">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vk-Tl-sAL">
                                         <rect key="frame" x="179" y="8" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5vk-Tl-sAL" secondAttribute="height" multiplier="81:80" id="JiH-gR-WUV"/>
@@ -99,7 +99,7 @@
                                             <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwV-sk-5Bw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBv-qF-vw0">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBv-qF-vw0">
                                         <rect key="frame" x="8" y="8" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qBv-qF-vw0" secondAttribute="height" multiplier="1:1" id="JZJ-h5-JDs"/>
@@ -110,7 +110,7 @@
                                             <action selector="clearScreenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmz-UT-Nhe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-eV-Rfe">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-eV-Rfe">
                                         <rect key="frame" x="93" y="8" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CXv-eV-Rfe" secondAttribute="height" multiplier="1:1" id="kY7-d6-QSh"/>
@@ -121,106 +121,7 @@
                                             <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePg-af-c6R"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I06-qk-2Zu">
-                                        <rect key="frame" x="93" y="96" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="I06-qk-2Zu" secondAttribute="height" multiplier="1:1" id="nHp-XI-uoh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="8"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yJ-QV-bFx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAV-4v-5EH">
-                                        <rect key="frame" x="93" y="184" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="BAV-4v-5EH" secondAttribute="height" multiplier="83:80" id="1OW-N5-xKq"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="5"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29t-uI-fle"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-42-kPe">
-                                        <rect key="frame" x="93" y="272" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="rS9-42-kPe" secondAttribute="height" multiplier="39:40" id="LYf-6S-b3w"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="2"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hz9-ow-fL3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAw-3X-Ja7">
-                                        <rect key="frame" x="179" y="96" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="HAw-3X-Ja7" secondAttribute="height" multiplier="81:80" id="Pn8-IA-bHx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="9"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="876-Jo-sVM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw3-In-MfS">
-                                        <rect key="frame" x="179" y="184" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Sw3-In-MfS" secondAttribute="height" multiplier="81:80" id="Mt8-IL-Hjt"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="6"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52m-8e-gN1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR7-Pk-OTT">
-                                        <rect key="frame" x="181" y="272" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="wR7-Pk-OTT" secondAttribute="height" multiplier="43:40" id="wwI-C0-8x9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="3"/>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKg-Nv-nMV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSM-re-FNO">
-                                        <rect key="frame" x="268" y="96" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="eSM-re-FNO" secondAttribute="height" multiplier="80:81" id="aZ7-PT-0Na"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="X"/>
-                                        <connections>
-                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbf-8N-7dG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32q-Lk-hTr">
-                                        <rect key="frame" x="268" y="185" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="32q-Lk-hTr" secondAttribute="height" multiplier="80:79" id="VST-YO-uyg"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="-"/>
-                                        <connections>
-                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mp0-d2-EbL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-na-RT0">
-                                        <rect key="frame" x="268" y="272" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="bfh-na-RT0" secondAttribute="height" multiplier="1:1" id="Rkh-vx-jfu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+"/>
-                                        <connections>
-                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpa-ld-Grm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REO-E1-SVd">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REO-E1-SVd">
                                         <rect key="frame" x="174" y="360" width="86" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="REO-E1-SVd" secondAttribute="height" multiplier="43:40" id="wP8-i6-ZLH"/>
@@ -231,11 +132,111 @@
                                             <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ToP-72-Ctz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zca-dh-hdK">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I06-qk-2Zu">
+                                        <rect key="frame" x="93" y="96" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="I06-qk-2Zu" secondAttribute="height" multiplier="1:1" id="nHp-XI-uoh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yJ-QV-bFx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAV-4v-5EH">
+                                        <rect key="frame" x="93" y="184" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BAV-4v-5EH" secondAttribute="height" multiplier="83:80" id="1OW-N5-xKq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29t-uI-fle"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-42-kPe">
+                                        <rect key="frame" x="93" y="272" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rS9-42-kPe" secondAttribute="height" multiplier="39:40" id="LYf-6S-b3w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hz9-ow-fL3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAw-3X-Ja7">
+                                        <rect key="frame" x="179" y="96" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HAw-3X-Ja7" secondAttribute="height" multiplier="81:80" id="Pn8-IA-bHx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="876-Jo-sVM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw3-In-MfS">
+                                        <rect key="frame" x="179" y="184" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Sw3-In-MfS" secondAttribute="height" multiplier="81:80" id="Mt8-IL-Hjt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52m-8e-gN1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSM-re-FNO">
+                                        <rect key="frame" x="268" y="96" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eSM-re-FNO" secondAttribute="height" multiplier="80:81" id="aZ7-PT-0Na"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbf-8N-7dG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32q-Lk-hTr">
+                                        <rect key="frame" x="268" y="185" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="32q-Lk-hTr" secondAttribute="height" multiplier="80:79" id="VST-YO-uyg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mp0-d2-EbL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-na-RT0">
+                                        <rect key="frame" x="268" y="272" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bfh-na-RT0" secondAttribute="height" multiplier="1:1" id="Rkh-vx-jfu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpa-ld-Grm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR7-Pk-OTT">
+                                        <rect key="frame" x="167" y="272" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wR7-Pk-OTT" secondAttribute="height" multiplier="43:40" id="wwI-C0-8x9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKg-Nv-nMV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zca-dh-hdK">
                                         <rect key="frame" x="268" y="360" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zca-dh-hdK" secondAttribute="height" multiplier="1:1" id="cgo-K3-Oar"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="."/>
                                         <connections>
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WtX-Ua-jpc"/>
@@ -302,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="85"/>
+            <point key="canvasLocation" x="254" y="311"/>
         </scene>
     </scenes>
 </document>

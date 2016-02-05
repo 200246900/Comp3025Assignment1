@@ -12,19 +12,17 @@ class ViewController: UIViewController
     var firstUserInput:Float = 0.0
     var secondUserInput:Float = 0.0
     var answer:Float = 0.0
-    var operation = ""
+    var calculation = ""
     var stillTypingNumber = false
     
+    //Defaulted functions
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
     }
-    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBOutlet weak var calculatorDisplay: UILabel!
@@ -32,12 +30,14 @@ class ViewController: UIViewController
     //This function handles the user selecting a number
     @IBAction func numberTapped(sender: AnyObject)
     {
+        //Assign whatever the number clicked to a currentInput
         var currentInput = String(sender.currentTitle)
         
         //String converstion bug 'fix'
+        //For some reason without this ever number gets inputted as <Optional("X")
         if (currentInput as NSString).containsString("Optional")
         {
-            //Cut off excess characters
+            //Drop First 10 characters <Optional(">
             currentInput=String(currentInput.characters.dropFirst())
             currentInput=String(currentInput.characters.dropFirst())
             currentInput=String(currentInput.characters.dropFirst())
@@ -48,16 +48,19 @@ class ViewController: UIViewController
             currentInput=String(currentInput.characters.dropFirst())
             currentInput=String(currentInput.characters.dropFirst())
             currentInput=String(currentInput.characters.dropFirst())
+            
+            //Drop last two characters <")>
             currentInput=String(currentInput.characters.dropLast())
             currentInput=String(currentInput.characters.dropLast())
         }
         
+        //If the user is still typing the question
         if stillTypingNumber
         {
             //If the user has not chosen a calculation
             calculatorDisplay.text = calculatorDisplay.text! + String(currentInput)
         }
-        else
+        else //User is done calculation
         {
             //Update display with number
             calculatorDisplay.text = currentInput
@@ -68,28 +71,31 @@ class ViewController: UIViewController
     //This funciton handles the user selecting a calculation
     @IBAction func calculationTapped(sender: AnyObject)
     {
-        //Set boolean to false
-        stillTypingNumber = false
-        
         //Assign first number entered
         firstUserInput = NSString(string: calculatorDisplay.text!).floatValue
-        //Assign the operation selected
-        operation = sender.currentTitle!!
         
-        if operation == "+/-"
+        //Assign the operation selected
+        calculation = sender.currentTitle!!
+        
+        //Postive/negative converstion
+        if calculation == "+/-"
         {
-            //Postive/negative converstion
+            //Multiply by negative inverse to switch operators
             firstUserInput = (firstUserInput*(-1))
+            
+            //Update Calc display
             calculatorDisplay.text=String(firstUserInput)
+        }
+        else
+        {
+            //Set boolean to false
+            stillTypingNumber = false
         }
     }
     
     //If the user wishes to calculate
     @IBAction func equalsTapped(sender: AnyObject)
     {
-        //Set boolean to false
-        stillTypingNumber = false
-        
         //Set answer variable back to default
         answer = 0.0
         
@@ -97,33 +103,37 @@ class ViewController: UIViewController
         secondUserInput = NSString(string: calculatorDisplay.text!).floatValue
         
         //Check what operation was chosen
-        if operation == "+"
+        if calculation == "+"
         {
             //adition
             answer = firstUserInput + secondUserInput
         }
-        else if operation == "-"
+        else if calculation == "-"
         {
             //subtraction
             answer = firstUserInput - secondUserInput
         }
-        else if operation == "X"
+        else if calculation == "X"
         {
             //multiplication
             answer = firstUserInput * secondUserInput
         }
-        else if operation == "/"
+        else if calculation == "/"
         {
             //Division
             answer = firstUserInput / secondUserInput
         }
-        else if operation == "%"
+        else if calculation == "%"
         {
             //Modulas
             answer = firstUserInput % secondUserInput
         }
         
-        calculatorDisplay.text = "\(answer)"
+        //Update Calc with answer
+        calculatorDisplay.text = String(answer)
+        
+        //Set boolean to false, user is done typing question
+        stillTypingNumber = false
     }
     
     //This function clears the screen
@@ -133,13 +143,10 @@ class ViewController: UIViewController
         stillTypingNumber = false
         firstUserInput = 0
         secondUserInput = 0
-        operation = ""
+        calculation = ""
         
         //Wipe calculation screen
-        calculatorDisplay.text="0"
-        
+        calculatorDisplay.text="0.0"
     }
-    
-    
 }
 

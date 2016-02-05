@@ -14,7 +14,7 @@ class ViewController: UIViewController
     var answer:Float = 0.0
     var calculation = ""
     var stillTypingNumber = false
-    
+    var tempNum:Float = 0.0
     //Defaulted functions
     override func viewDidLoad()
     {
@@ -26,6 +26,19 @@ class ViewController: UIViewController
     }
     
     @IBOutlet weak var calculatorDisplay: UILabel!
+    
+    
+    @IBAction func inverseTapped(sender: AnyObject)
+    {
+        //Assign Calc text to temp number
+        tempNum = NSString(string: calculatorDisplay.text!).floatValue
+        
+        //Get inverse
+        tempNum = (tempNum*(-1))
+        
+        //Update Calc display
+        calculatorDisplay.text=String(tempNum)
+    }
     
     //This function handles the user selecting a number
     @IBAction func numberTapped(sender: AnyObject)
@@ -71,26 +84,14 @@ class ViewController: UIViewController
     //This funciton handles the user selecting a calculation
     @IBAction func calculationTapped(sender: AnyObject)
     {
+        //Set boolean to false
+        stillTypingNumber = false
+        
         //Assign first number entered
         firstUserInput = NSString(string: calculatorDisplay.text!).floatValue
         
         //Assign the operation selected
         calculation = sender.currentTitle!!
-        
-        //Postive/negative converstion
-        if calculation == "+/-"
-        {
-            //Multiply by negative inverse to switch operators
-            firstUserInput = (firstUserInput*(-1))
-            
-            //Update Calc display
-            calculatorDisplay.text=String(firstUserInput)
-        }
-        else
-        {
-            //Set boolean to false
-            stillTypingNumber = false
-        }
     }
     
     //If the user wishes to calculate

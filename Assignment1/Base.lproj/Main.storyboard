@@ -110,17 +110,6 @@
                                             <action selector="clearScreenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmz-UT-Nhe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-eV-Rfe">
-                                        <rect key="frame" x="93" y="8" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="CXv-eV-Rfe" secondAttribute="height" multiplier="1:1" id="kY7-d6-QSh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+/-"/>
-                                        <connections>
-                                            <action selector="calculationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePg-af-c6R"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REO-E1-SVd">
                                         <rect key="frame" x="174" y="360" width="86" height="80"/>
                                         <constraints>
@@ -242,18 +231,30 @@
                                             <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WtX-Ua-jpc"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEp-gr-UI0">
+                                        <rect key="frame" x="93" y="8" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GEp-gr-UI0" secondAttribute="height" multiplier="1:1" id="yYB-UV-ERn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+/-"/>
+                                        <connections>
+                                            <action selector="inverseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Naa-Yb-Ps0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="zca-dh-hdK" secondAttribute="trailing" constant="27" id="2wL-J6-Lv3"/>
                                     <constraint firstItem="bfh-na-RT0" firstAttribute="leading" secondItem="wR7-Pk-OTT" secondAttribute="trailing" constant="8" id="3Fn-S8-SHa"/>
+                                    <constraint firstItem="5vk-Tl-sAL" firstAttribute="leading" secondItem="GEp-gr-UI0" secondAttribute="trailing" constant="6" id="5V3-e1-zdo"/>
                                     <constraint firstAttribute="trailing" secondItem="32q-Lk-hTr" secondAttribute="trailing" constant="27" id="70z-RD-Q7g"/>
                                     <constraint firstItem="rS9-42-kPe" firstAttribute="top" secondItem="BAV-4v-5EH" secondAttribute="bottom" constant="8" id="8Dj-Tx-90J"/>
                                     <constraint firstAttribute="trailing" secondItem="bfh-na-RT0" secondAttribute="trailing" constant="27" id="92g-5i-fCg"/>
                                     <constraint firstItem="pC0-BG-lk7" firstAttribute="top" secondItem="rS9-42-kPe" secondAttribute="bottom" constant="8" id="Azg-VL-9gR"/>
                                     <constraint firstItem="pC0-BG-lk7" firstAttribute="leading" secondItem="FwU-M8-boy" secondAttribute="leading" constant="8" id="BUb-M2-g6J"/>
                                     <constraint firstItem="REO-E1-SVd" firstAttribute="leading" secondItem="pC0-BG-lk7" secondAttribute="trailing" constant="8" id="BXj-bF-wjW"/>
-                                    <constraint firstItem="CXv-eV-Rfe" firstAttribute="top" secondItem="FwU-M8-boy" secondAttribute="top" constant="8" id="Dyo-S1-8HB"/>
+                                    <constraint firstItem="GEp-gr-UI0" firstAttribute="leading" secondItem="qBv-qF-vw0" secondAttribute="trailing" constant="5" id="DjF-Lr-Dwb"/>
                                     <constraint firstItem="rbg-OM-9V0" firstAttribute="leading" secondItem="5vk-Tl-sAL" secondAttribute="trailing" constant="8" id="Evx-I2-zkF"/>
                                     <constraint firstItem="zca-dh-hdK" firstAttribute="leading" secondItem="REO-E1-SVd" secondAttribute="trailing" constant="8" id="Fu4-54-3Qd"/>
                                     <constraint firstItem="Sw3-In-MfS" firstAttribute="top" secondItem="HAw-3X-Ja7" secondAttribute="bottom" constant="8" id="GCe-Ke-LUw"/>
@@ -265,23 +266,22 @@
                                     <constraint firstItem="IyM-IQ-pVc" firstAttribute="top" secondItem="vSl-Yd-88j" secondAttribute="bottom" constant="8" id="QEp-xe-ab1"/>
                                     <constraint firstItem="vSl-Yd-88j" firstAttribute="leading" secondItem="FwU-M8-boy" secondAttribute="leading" constant="8" id="QHb-uw-YQw"/>
                                     <constraint firstItem="vSl-Yd-88j" firstAttribute="top" secondItem="qBv-qF-vw0" secondAttribute="bottom" constant="8" id="QQc-0u-Ktc"/>
+                                    <constraint firstItem="GEp-gr-UI0" firstAttribute="top" secondItem="FwU-M8-boy" secondAttribute="top" constant="8" id="S7Q-ze-Hgd"/>
                                     <constraint firstItem="IyM-IQ-pVc" firstAttribute="leading" secondItem="FwU-M8-boy" secondAttribute="leading" constant="8" id="SMG-pY-V4B"/>
                                     <constraint firstItem="HAw-3X-Ja7" firstAttribute="top" secondItem="5vk-Tl-sAL" secondAttribute="bottom" constant="8" id="SMW-y8-yqb"/>
                                     <constraint firstItem="HAw-3X-Ja7" firstAttribute="leading" secondItem="I06-qk-2Zu" secondAttribute="trailing" constant="8" id="Sd9-Jz-QNV"/>
-                                    <constraint firstItem="5vk-Tl-sAL" firstAttribute="leading" secondItem="CXv-eV-Rfe" secondAttribute="trailing" constant="8" id="Tog-ft-ULJ"/>
                                     <constraint firstItem="jO4-dJ-AeF" firstAttribute="top" secondItem="IyM-IQ-pVc" secondAttribute="bottom" constant="8" id="VUo-NF-T2F"/>
                                     <constraint firstAttribute="bottom" secondItem="zca-dh-hdK" secondAttribute="bottom" constant="34" id="VxP-7U-UZ2"/>
                                     <constraint firstItem="BAV-4v-5EH" firstAttribute="top" secondItem="I06-qk-2Zu" secondAttribute="bottom" constant="8" id="XLR-hy-fOt"/>
                                     <constraint firstItem="qBv-qF-vw0" firstAttribute="top" secondItem="FwU-M8-boy" secondAttribute="top" constant="8" id="Zkf-xC-zIh"/>
                                     <constraint firstItem="eSM-re-FNO" firstAttribute="leading" secondItem="HAw-3X-Ja7" secondAttribute="trailing" constant="8" id="aGC-MK-QKK"/>
-                                    <constraint firstItem="I06-qk-2Zu" firstAttribute="top" secondItem="CXv-eV-Rfe" secondAttribute="bottom" constant="8" id="amy-cG-HSO"/>
                                     <constraint firstItem="wR7-Pk-OTT" firstAttribute="leading" secondItem="rS9-42-kPe" secondAttribute="trailing" constant="8" id="apX-Pk-PWf"/>
                                     <constraint firstItem="I06-qk-2Zu" firstAttribute="leading" secondItem="vSl-Yd-88j" secondAttribute="trailing" constant="3" id="ay2-yp-YfV"/>
                                     <constraint firstItem="wR7-Pk-OTT" firstAttribute="top" secondItem="Sw3-In-MfS" secondAttribute="bottom" constant="8" id="cIC-3E-RMw"/>
-                                    <constraint firstItem="CXv-eV-Rfe" firstAttribute="leading" secondItem="qBv-qF-vw0" secondAttribute="trailing" constant="3" id="dBc-nM-6ls"/>
                                     <constraint firstItem="eSM-re-FNO" firstAttribute="top" secondItem="rbg-OM-9V0" secondAttribute="bottom" constant="8" id="dv5-A8-I4m"/>
                                     <constraint firstAttribute="trailing" secondItem="eSM-re-FNO" secondAttribute="trailing" constant="27" id="eJo-wW-a6a"/>
                                     <constraint firstItem="pC0-BG-lk7" firstAttribute="top" secondItem="jO4-dJ-AeF" secondAttribute="bottom" constant="8" id="f6L-io-xhf"/>
+                                    <constraint firstItem="I06-qk-2Zu" firstAttribute="top" secondItem="GEp-gr-UI0" secondAttribute="bottom" constant="8" id="hkF-vI-47K"/>
                                     <constraint firstItem="REO-E1-SVd" firstAttribute="top" secondItem="wR7-Pk-OTT" secondAttribute="bottom" constant="8" id="kuc-cY-XAm"/>
                                     <constraint firstItem="qBv-qF-vw0" firstAttribute="leading" secondItem="FwU-M8-boy" secondAttribute="leading" constant="8" id="o8H-Jw-NpW"/>
                                     <constraint firstItem="rS9-42-kPe" firstAttribute="leading" secondItem="jO4-dJ-AeF" secondAttribute="trailing" id="oQ0-zT-CBX"/>

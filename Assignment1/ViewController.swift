@@ -18,7 +18,7 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning()
@@ -29,6 +29,7 @@ class ViewController: UIViewController
     
     @IBOutlet weak var calculatorDisplay: UILabel!
     
+    //This function handles the user selecting a number
     @IBAction func numberTapped(sender: AnyObject)
     {
         var currentInput = String(sender.currentTitle)
@@ -64,6 +65,7 @@ class ViewController: UIViewController
         }
     }
     
+    //This funciton handles the user selecting a calculation
     @IBAction func calculationTapped(sender: AnyObject)
     {
         //Set boolean to false
@@ -82,6 +84,7 @@ class ViewController: UIViewController
         }
     }
     
+    //If the user wishes to calculate
     @IBAction func equalsTapped(sender: AnyObject)
     {
         //Set boolean to false
@@ -92,6 +95,8 @@ class ViewController: UIViewController
         
         //Assign second number entered
         secondUserInput = NSString(string: calculatorDisplay.text!).floatValue
+        
+        //Check what operation was chosen
         if operation == "+"
         {
             //adition
@@ -121,6 +126,7 @@ class ViewController: UIViewController
         calculatorDisplay.text = "\(answer)"
     }
     
+    //This function clears the screen
     @IBAction func clearScreenTapped(sender: AnyObject)
     {
         //Reset variables back to default
